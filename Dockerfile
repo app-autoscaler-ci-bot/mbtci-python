@@ -1,6 +1,10 @@
 # Use the base image
 FROM devxci/mbtci-java21-node22
 
+LABEL org.opencontainers.image.source=https://github.com/autoscaler-ci-bot/mbtci-python
+LABEL org.opencontainers.image.description="devxci/mbtci-java21-node22-based container image with Python 3 and pipx installed"
+LABEL org.opencontainers.image.licenses=Apache-2.0
+
 ARG MTA_USER="mta"
 
 # Switch to root user to install packages
