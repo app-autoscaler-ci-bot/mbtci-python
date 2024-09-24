@@ -1,5 +1,5 @@
 # Use the base image
-FROM devxci/mbtci-java21-node22
+FROM devxci/mbtci-java21-node22@sha256:9320babf01013bfa04262f5c2d78adc93ec5ac684ae01497c8bcd3b94a9bbaeb
 
 LABEL org.opencontainers.image.source=https://github.com/autoscaler-ci-bot/mbtci-python
 LABEL org.opencontainers.image.description="devxci/mbtci-java21-node22-based container image with Python 3 and pipx installed"
