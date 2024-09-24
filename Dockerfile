@@ -12,7 +12,7 @@ USER root
 
 # Install python3
 
-# renovate: datasource=python-versioning depName=python versioning=semver
+# renovate: datasource=python-version depName=python versioning=semver
 ARG PYTHON_VERSION="3.12.5"
 
 # Install dependencies for building Python
