@@ -4,5 +4,6 @@
     "config:best-practices",
     ":automergeAll",
     "customManagers:dockerfileVersions"
-  ]
+  ],
+  "platformAutomerge": true
 }
