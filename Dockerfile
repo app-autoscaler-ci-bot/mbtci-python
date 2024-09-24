@@ -13,7 +13,7 @@ USER root
 # Install python3
 
 # renovate: datasource=python-version depName=python versioning=semver
-ARG PYTHON_VERSION="3.12.5"
+ARG PYTHON_VERSION="3.12.6"
 
 # Install dependencies for building Python
 RUN apt-get update && \
