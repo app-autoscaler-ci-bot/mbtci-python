@@ -8,6 +8,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       - name: hadolint
-        uses: reviewdog/action-hadolint@f8fef4b4e9675186888b4153c9a809112b7685e4 # v1
+        uses: reviewdog/action-hadolint@fc7ee4a9f71e521bc43e370819247b70e5327540 # v1
         with:
           reporter: github-pr-review
