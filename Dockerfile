@@ -12,8 +12,10 @@ USER root
 
 # Install python3
 
-# renovate: datasource=python-version depName=python versioning=semver
-ARG PYTHON_VERSION="3.13.7"
+# Automatic Python version updates via Renovate are currently disabled to keep the Python version in this Docker image  aligned with the version used by the Cloud Foundry python-buildpack, which has received no new releases as of 2025-10-16.
+# Once the python-buildpack starts releasing newer Python versions, automatic Renovate updates can be re-enabled as shown here: https://github.com/app-autoscaler-ci-bot/mbtci-python/blob/d035e679b7f9e15e09e7c3e8a54946e409c938de/Dockerfile#L15
+# The latest Python version supported by the last python-buildpack release (v1.8.38) is 3.13.5: https://github.com/cloudfoundry/python-buildpack/blob/v1.8.38/manifest.yml#L153
+ARG PYTHON_VERSION="3.13.5"
 
 # Install dependencies for building Python
 RUN apt-get update && \
