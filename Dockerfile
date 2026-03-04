@@ -49,7 +49,6 @@ RUN wget https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VER
 # Install pip and pipx
 RUN python3 -m ensurepip --default-pip && \
     python3 -m pip install --upgrade pip && \
-    ln -s /usr/local/bin/pip3 /usr/local/bin/pip && \
     python3 -m pip install pipx && \
     python3 --version && pip --version && pipx --version
 
