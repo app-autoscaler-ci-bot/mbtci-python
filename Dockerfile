@@ -50,6 +50,7 @@ RUN wget https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VER
 RUN python3 -m ensurepip --default-pip && \
     python3 -m pip install --upgrade pip && \
     python3 -m pip install pipx && \
+    ln -sf $(which pip3) /usr/local/bin/pip && \
     python3 --version && pip --version && pipx --version
 
 # Switch back to the original user
